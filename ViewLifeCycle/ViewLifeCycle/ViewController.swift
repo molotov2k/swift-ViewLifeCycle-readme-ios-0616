@@ -20,4 +20,8 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         print("viewDidAppear(_:) called")
     }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        view.backgroundColor = UIColor.randomColor()
+    }
 }
